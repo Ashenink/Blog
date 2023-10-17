@@ -39,7 +39,7 @@ export const FooterImpl: React.FC = () => {
     <footer className={styles.footer}>
       <div className={styles.copyright}>Copyright 2023 {config.author}</div>
 
-      <div className={styles.settings}>
+      <div className={styles.settings} style={{fontSize: 0}}>
         {hasMounted && (
           <a
             className={styles.toggleDarkMode}
@@ -48,7 +48,7 @@ export const FooterImpl: React.FC = () => {
             onClick={onToggleDarkMode}
             title='Toggle dark mode'
           >
-            {isDarkMode ? <IoMoonSharp size={0} /> : <IoSunnyOutline size={0} />} //add size
+            {isDarkMode ? <IoMoonSharp/> : <IoSunnyOutline/>}
           </a>
         )}
       </div>
