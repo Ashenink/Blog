@@ -7,8 +7,8 @@ import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
-import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
-import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
+//import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
+//import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
@@ -35,8 +35,9 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2022 {config.author}</div>
-
+      <div className={styles.copyright}>Copyright 2023 {config.author}</div>
+      
+      /* try to dismiss toggledark
       <div className={styles.settings}>
         {hasMounted && (
           <a
@@ -50,7 +51,8 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
       </div>
-
+      */
+      
       <div className={styles.social}>
         {config.twitter && (
           <a
