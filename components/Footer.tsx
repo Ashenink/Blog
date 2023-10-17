@@ -44,8 +44,8 @@ export const FooterImpl: React.FC = () => {
           <a
             className={styles.toggleDarkMode}
             href='#'
-            role='button'
-            onClick={onToggleDarkMode}
+            //role='button'
+            //onClick={onToggleDarkMode}
             title='Toggle dark mode'
           >
             {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
