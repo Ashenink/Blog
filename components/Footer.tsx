@@ -48,24 +48,8 @@ export const FooterImpl: React.FC = () => {
             onClick={onToggleDarkMode}
             title='Toggle dark mode'
           >
-            {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
+            {isDarkMode ? <IoMoonSharp size={0} /> : <IoSunnyOutline size={0} />} //add size
           </a>
-             <svg
-            width='0' //80 original
-            height='0' //80 original
-            viewBox='0 0 250 250'
-            style={{
-              fill: '#70B7FD',
-              color: '#fff',
-              position: 'absolute',
-              zIndex: 1001,
-              top: 0,
-              right: 0,
-              border: 0,
-              transform: 'scale(1, 1)'
-            }}
-            aria-hidden='true'
-          >
         )}
       </div>
 
