@@ -16,7 +16,7 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
-
+/* 20-140 line about the dark mode setting
 export const FooterImpl: React.FC = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
   const { isDarkMode, toggleDarkMode } = useDarkMode()
@@ -138,5 +138,5 @@ export const FooterImpl: React.FC = () => {
     </footer>
   )
 }
-
+*/
 export const Footer = React.memo(FooterImpl)
