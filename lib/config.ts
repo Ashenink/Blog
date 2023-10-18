@@ -110,7 +110,10 @@ export const navigationLinks: Array<NavigationLink | null> = getSiteConfig(
 )
 
 // Optional site search
-export const isSearchEnabled: boolean = getSiteConfig('isSearchEnabled', true)
+export const isSearchEnabled: boolean = getSiteConfig(
+  'isSearchEnabled',
+  false
+)
 
 // ----------------------------------------------------------------------------
 
