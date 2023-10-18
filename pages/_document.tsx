@@ -7,16 +7,18 @@ import { getSocialImageUrl } from '@/lib/get-social-image-url'
 
 export default class MyDocument extends Document {
   render() {
+    // 使用 getSocialImageUrl 函数获取图标的路径
+    const faviconPath = getSocialImageUrl();
     return (
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
-            <link rel='shortcut icon' href='/favicon.ico'/> 
+            <link rel='shortcut icon' href={{faviconPath}} /> //href='/favicon.ico'
             <link
               rel='icon'
               type='image/png'
               sizes='32x32'
-              href='favicon.png'
+              href={{faviconPath}}//href='favicon.png'
             />
 
             <link rel='manifest' href='/manifest.json' />
