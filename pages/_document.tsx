@@ -2,6 +2,8 @@ import * as React from 'react'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 import { IconContext } from '@react-icons/all-files'
+import { getSocialImageUrl } from '@/lib/get-social-image-url'
+
 
 export default class MyDocument extends Document {
   render() {
@@ -9,12 +11,12 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
-            <link rel='shortcut icon' href='/favicon.ico' />
+            <link rel='shortcut icon' href='/getSocialImageUrl' /> // /favicon.ico
             <link
               rel='icon'
               type='image/png'
               sizes='32x32'
-              href='favicon.png'
+              href='getSocialImageUrl'
             />
 
             <link rel='manifest' href='/manifest.json' />
