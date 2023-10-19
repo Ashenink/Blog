@@ -83,8 +83,10 @@ export const PageHead: React.FC<
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
     </Head>
+    
 
-    <Body><script src="https://giscus.app/client.js"
+    
+    <script src="https://giscus.app/client.js"
         data-repo="Ashenink/Blog"
         data-repo-id="R_kgDOKhfGnA"
         data-category="Announcements"
@@ -98,7 +100,8 @@ export const PageHead: React.FC<
         data-lang="en"
         crossorigin="anonymous"
         async>
-      </script></Body>
+      </script>
+   
 
   )
 }
