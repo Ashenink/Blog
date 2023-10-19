@@ -84,8 +84,7 @@ export const PageHead: React.FC<
       <title>{title}</title>
     </Head>
 
-    <Body>
-    <script src="https://giscus.app/client.js"
+    <Body><script src="https://giscus.app/client.js"
         data-repo="Ashenink/Blog"
         data-repo-id="R_kgDOKhfGnA"
         data-category="Announcements"
@@ -99,7 +98,7 @@ export const PageHead: React.FC<
         data-lang="en"
         crossorigin="anonymous"
         async>
-      </script>  
-    </Body>
+      </script></Body>
+
   )
 }
