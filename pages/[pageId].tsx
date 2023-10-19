@@ -52,7 +52,7 @@ export async function getStaticPaths() {
 
 export default function NotionDomainDynamicPage(props) {
   return (
-    <NotionPage {...props} >
+    <NotionPage {...props}>
      <Html lang='en'>
        <Body>
        <script src="https://giscus.app/client.js"
@@ -72,6 +72,6 @@ export default function NotionDomainDynamicPage(props) {
       </script>
       </Body>
      </Html>
-    </ NotionPage>
+    </NotionPage>
     )
 }
