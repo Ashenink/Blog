@@ -48,13 +48,14 @@ export async function getStaticPaths() {
   console.log(staticPaths.paths)
   return staticPaths
 }
-  
-export default function NotionDomainDynamicPage(props) {
+
+
+
+  export default function NotionDomainDynamicPage(props) {
   return (
     <div>
       <NotionPage {...props} />
-      <script
-        src="https://giscus.app/client.js"
+      <script src="https://giscus.app/client.js"
         data-repo="Ashenink/Blog"
         data-repo-id="R_kgDOKhfGnA"
         data-category="Announcements"
@@ -67,8 +68,8 @@ export default function NotionDomainDynamicPage(props) {
         data-theme="preferred_color_scheme"
         data-lang="en"
         crossorigin="anonymous"
-        async
-      ></script>
+        async>
+    </script>
     </div>
   )
 }
