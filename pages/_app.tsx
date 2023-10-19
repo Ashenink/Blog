@@ -19,19 +19,13 @@ import 'styles/notion.css'
 // global style overrides for prism theme (optional)
 import 'styles/prism-theme.css'
 
-import type { AppProps } from 'next/app';
-import { Analytics } from '@vercel/analytics/react';
- 
+import type { AppProps } from 'next/app'
+import { Analytics } from '@vercel/analytics/react'
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Component {...pageProps} />
+  return <Component {...pageProps} />
       <Analytics />
-    </>
-  );
 }
- 
-export default MyApp;
+export default MyApp
 
 
 import { bootstrap } from '@/lib/bootstrap-client'
