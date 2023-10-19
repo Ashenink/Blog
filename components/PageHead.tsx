@@ -21,7 +21,6 @@ export const PageHead: React.FC<
   const socialImageUrl = getSocialImageUrl(pageId) || image
 
   return (
-
     <Head>
       <meta charSet='utf-8' />
       <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
@@ -82,7 +81,7 @@ export const PageHead: React.FC<
 
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
-      <title{title}</title>
+      <title>{title}</title>
     </Head>
   )
 }
