@@ -21,6 +21,7 @@ export const PageHead: React.FC<
   const socialImageUrl = getSocialImageUrl(pageId) || image
 
   return (
+    <html>
     <Head>
       <meta charSet='utf-8' />
       <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
@@ -83,24 +84,27 @@ export const PageHead: React.FC<
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
 
-      <script src="https://giscus.app/client.js"
-      data-repo="Ashenink/Blog"
-      data-repo-id="R_kgDOKhfGnA"
-      data-category="Announcements"
-      data-category-id="DIC_kwDOKhfGnM4CaRlu"
-      data-mapping="pathname"
-      data-strict="0"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="bottom"
-      data-theme="preferred_color_scheme"
-      data-lang="en"
-      crossorigin="anonymous"
-      async>
-    </script>
+  
       
     </Head>
-    
-
+      
+    <body>
+    <script src="https://giscus.app/client.js"
+        data-repo="Ashenink/Blog"
+        data-repo-id="R_kgDOKhfGnA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKhfGnM4CaRlu"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+    </body>
+</html>
   )
 }
