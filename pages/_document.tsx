@@ -63,10 +63,7 @@ export default class MyDocument extends Document {
 `
               }}
             />
-            <Main />
 
-            <NextScript />
-            
             <script src="https://giscus.app/client.js"
         data-repo="Ashenink/Blog"
         data-repo-id="R_kgDOKhfGnA"
@@ -82,6 +79,12 @@ export default class MyDocument extends Document {
         crossorigin="anonymous"
         async>
         </script>  
+            
+            <Main />
+
+            <NextScript />
+            
+            
             
           </body>
         </Html>
