@@ -82,15 +82,7 @@ export const PageHead: React.FC<
 
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
-      <title>{title}</title>
+      <title{title}</title>
 
-       <style>
-      /* 设置<title>元素的字体样式为Serif */
-      title {
-        font-family: serif;
-      }
-    </style>
-    </Head>
-      
   )
 }
