@@ -169,7 +169,8 @@
 .notion-title {
   display: block;
   text-align: center;
-  font-style: serif;
+  font-family: serif;
+
 }
 
 .notion-collection-row {
