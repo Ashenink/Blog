@@ -61,7 +61,6 @@ function BlogPost() {
     </div>
 
     <div class="giscus"></div>
-    
     <script src="https://giscus.app/client.js"
             data-repo="Ashenink/Blog"
             data-repo-id="R_kgDOKhfGnA"
@@ -81,8 +80,6 @@ function BlogPost() {
     
   );
 }
-
-
 
 export default BlogPost;
 
