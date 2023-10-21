@@ -39,9 +39,14 @@ function BlogPost() {
     script.setAttribute('crossorigin', 'anonymous');
     document.getElementById('comments-container').appendChild(script);
     };
-         // Add an event listener to run the addGiscusScript function when the document is fully loaded
-    window.addEventListener('load', addGiscusScript);
-
+         
+    // Add an event listener to run the addGiscusScript function when the document is fully loaded
+    if (document.readyState === 'complete') {
+      addGiscusScript();
+    } else {
+      window.addEventListener('load', addGiscusScript);
+    }
+    
     // Clean up the event listener when the component is unmounted
     return () => {
       window.removeEventListener('load', addGiscusScript);
