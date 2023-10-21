@@ -41,8 +41,7 @@ export const FooterImpl: React.FC = () => {
         Copyright 2023 {config.author}
       </div>
       
-      <div className={styles.footer} style={{textAlign: 'center'}}>
-              <script src="https://giscus.app/client.js"
+      <script src="https://giscus.app/client.js"
               data-repo="Ashenink/Blog"
               data-repo-id="R_kgDOKhfGnA"
               data-category="Announcements"
@@ -57,8 +56,7 @@ export const FooterImpl: React.FC = () => {
               crossorigin="anonymous"
               async>
       </script>
-      </div>
-      
+
       <div className={styles.settings} style={{fontSize: 0}}>
         {hasMounted && (
           <a
