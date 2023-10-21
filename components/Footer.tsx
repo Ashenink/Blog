@@ -41,7 +41,7 @@ export const FooterImpl: React.FC = () => {
         Copyright 2023 {config.author}
       </div>
       
-      <div style={{textAlign: 'center'}}>
+      <div className={styles.footer} style={{textAlign: 'center'}}>
               <script src="https://giscus.app/client.js"
               data-repo="Ashenink/Blog"
               data-repo-id="R_kgDOKhfGnA"
