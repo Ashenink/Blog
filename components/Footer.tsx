@@ -17,59 +17,7 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
-
-//failed to add comment function
-function BlogPost() {
-  useEffect(() => {
-     // Create a function to add the Giscus script when the document is fully loaded
-    const addGiscusScript = () => {
-    const script = document.createElement('script');
-    script.src = 'https://giscus.app/client.js';
-    script.async = true;
-    script.setAttribute('data-repo', 'Ashenink/Blog');
-    script.setAttribute('data-repo-id', 'R_kgDOKhfGnA');
-    script.setAttribute('data-category', 'Announcements');
-    script.setAttribute('data-category-id', 'DIC_kwDOKhfGnM4CaRlu');
-    script.setAttribute('data-mapping', 'pathname');
-    script.setAttribute('data-strict', '0');
-    script.setAttribute('data-reactions-enabled', '1');
-    script.setAttribute('data-emit-metadata', '0');
-    script.setAttribute('data-input-position', 'bottom');
-    script.setAttribute('data-theme', 'dark_tritanopia');
-    script.setAttribute('data-lang', 'en');
-    script.setAttribute('crossorigin', 'anonymous');
-    document.getElementById('comments-container').appendChild(script);
-    };
-         
-    // Add an event listener to run the addGiscusScript function when the document is fully loaded
-    if (document.readyState === 'complete') {
-      addGiscusScript();
-    } else {
-      window.addEventListener('load', addGiscusScript);
-    }
-    
-    // Clean up the event listener when the component is unmounted
-    return () => {
-      window.removeEventListener('load', addGiscusScript);
-    };
-  }, []);
-
-    
-  return (
-    <div>
-      {/* Your blog post content here */}
-      <div id="comments-container"></div>
-    </div>
-    
-  );
-}
-
-export default BlogPost;
-
-
-
-    
-
+   
 export const FooterImpl: React.FC = () => {
 
   const [hasMounted, setHasMounted] = React.useState(false)
