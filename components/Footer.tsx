@@ -57,7 +57,7 @@ function BlogPost() {
   return (
     <div>
       {/* Your blog post content here */}
-      <div id="comments-container"></div>
+      <div class="giscus" id="comments-container"></div>
     </div>
   );
 }
