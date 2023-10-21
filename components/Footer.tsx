@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
@@ -21,6 +20,8 @@ import styles from './styles.module.css'
 
 function BlogPost() {
   useEffect(() => {
+     // Create a function to add the Giscus script when the document is fully loaded
+    const addGiscusScript = () => {
     const script = document.createElement('script');
     script.src = 'https://giscus.app/client.js';
     script.async = true;
@@ -37,8 +38,17 @@ function BlogPost() {
     script.setAttribute('data-lang', 'en');
     script.setAttribute('crossorigin', 'anonymous');
     document.getElementById('comments-container').appendChild(script);
+    };
+         // Add an event listener to run the addGiscusScript function when the document is fully loaded
+    window.addEventListener('load', addGiscusScript);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('load', addGiscusScript);
+    };
   }, []);
 
+    
   return (
     <div>
       {/* Your blog post content here */}
