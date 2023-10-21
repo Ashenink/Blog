@@ -59,12 +59,6 @@ function BlogPost() {
       {/* Your blog post content here */}
       <div id="comments-container"></div>
     </div>
-  );
-}
-
-export default BlogPost;
-
-
 
     <div class="giscus"></div>
     
@@ -83,6 +77,18 @@ export default BlogPost;
             crossorigin="anonymous"
             async>
     </script>
+
+    
+  );
+}
+
+
+
+export default BlogPost;
+
+
+
+    
 
 export const FooterImpl: React.FC = () => {
 
