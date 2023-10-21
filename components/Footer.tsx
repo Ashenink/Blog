@@ -39,6 +39,22 @@ export const FooterImpl: React.FC = () => {
     <footer className={styles.footer}>
       <div className={styles.copyright} style={{textAlign: 'center'}}>
         Copyright 2023 {config.author}
+        
+        <script src="https://giscus.app/client.js"
+        data-repo="Ashenink/Blog"
+        data-repo-id="R_kgDOKhfGnA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKhfGnM4CaRlu"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark_tritanopia"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
       </div>
 
       <div className={styles.settings} style={{fontSize: 0}}>
