@@ -18,6 +18,39 @@ import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
+function BlogPost() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.async = true;
+    script.setAttribute('data-repo', 'Ashenink/Blog');
+    script.setAttribute('data-repo-id', 'R_kgDOKhfGnA');
+    script.setAttribute('data-category', 'Announcements');
+    script.setAttribute('data-category-id', 'DIC_kwDOKhfGnM4CaRlu');
+    script.setAttribute('data-mapping', 'pathname');
+    script.setAttribute('data-strict', '0');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-input-position', 'bottom');
+    script.setAttribute('data-theme', 'dark_tritanopia');
+    script.setAttribute('data-lang', 'en');
+    script.setAttribute('crossorigin', 'anonymous');
+    document.getElementById('comments-container').appendChild(script);
+  }, []);
+
+  return (
+    <div>
+      {/* Your blog post content here */}
+      <div id="comments-container"></div>
+    </div>
+  );
+}
+
+export default BlogPost;
+
+
+
+
 export const FooterImpl: React.FC = () => {
 
   const [hasMounted, setHasMounted] = React.useState(false)
@@ -41,22 +74,6 @@ export const FooterImpl: React.FC = () => {
         Copyright 2023 {config.author}
       </div>
       
-      <script src="https://giscus.app/client.js"
-              data-repo="Ashenink/Blog"
-              data-repo-id="R_kgDOKhfGnA"
-              data-category="Announcements"
-              data-category-id="DIC_kwDOKhfGnM4CaRlu"
-              data-mapping="pathname"
-              data-strict="0"
-              data-reactions-enabled="1"
-              data-emit-metadata="0"
-              data-input-position="bottom"
-              data-theme="dark_tritanopia"
-              data-lang="en"
-              crossorigin="anonymous"
-              async>
-      </script>
-
       <div className={styles.settings} style={{fontSize: 0}}>
         {hasMounted && (
           <a
