@@ -18,6 +18,7 @@ import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
+//failed to add comment function
 function BlogPost() {
   useEffect(() => {
      // Create a function to add the Giscus script when the document is fully loaded
@@ -57,7 +58,7 @@ function BlogPost() {
   return (
     <div>
       {/* Your blog post content here */}
-      <div class="giscus" id="comments-container"></div>
+      <div id="comments-container"></div>
     </div>
     
   );
