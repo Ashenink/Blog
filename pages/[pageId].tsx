@@ -50,6 +50,27 @@ export async function getStaticPaths() {
 }
 
 export default function NotionDomainDynamicPage(props) {
-  return <NotionPage {...props} />
-
+  return (
+    <div>
+      <NotionPage {...props} />
+      {/* Your blog post content here */}
+      <div id="comments-container">
+        <script src="https://giscus.app/client.js"
+          data-repo="Ashenink/Blog"
+          data-repo-id="R_kgDOKhfGnA"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOKhfGnM4CaRlu"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="dark_tritanopia"
+          data-lang="en"
+          crossorigin="anonymous"
+          async
+        ></script>
+      </div>
+    </div>
+  );
 }
