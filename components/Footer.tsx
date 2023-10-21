@@ -1,4 +1,4 @@
-import * as React from 'react'
+
 import React, { useEffect } from 'react';
 
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
