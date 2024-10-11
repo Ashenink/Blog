@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Ao Shen',
 
   // open graph metadata (optional)
-  description: '',
+  description: 'Welcome to Ao\'s blog',
 
   // social usernames (optional)
   twitter: '',
