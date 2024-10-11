@@ -78,6 +78,9 @@ export const PageHead: React.FC<
         href={rssFeedUrl}
         title={site?.name}
       />
+      
+      <meta property="og:image" content="https://img.notionusercontent.com/s3/prod-files-secure%2Fc9d47a73-9b73-4e98-9885-3c983263bd1e%2F6cd6950c-566c-4f0a-adaa-4bfad1317a45%2FIMG_1412.jpeg/size/w=2000?exp=1728732429&sig=Fk_2-BTwMnbgsujQRCjKponAg3LFScFpv0T4keiwQeI">
+      <meta property="og:locale" content="en_US">
 
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
