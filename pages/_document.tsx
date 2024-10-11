@@ -10,15 +10,18 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
-            <link rel='shortcut icon' href= 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fc9d47a73-9b73-4e98-9885-3c983263bd1e%2F3f2a14a1-44e8-480d-8edc-141451be8bc3%2F1zcdjy.jpg?table=block&id=7b1c4f22-77f7-4449-9e06-fbe0ac4f6b09&spaceId=c9d47a73-9b73-4e98-9885-3c983263bd1e&width=250&userId=dbca7c03-0f49-430b-87dc-fce67e3ce7ce&cache=v2' />
+            
+            <link rel='shortcut icon' href= '/icon/android-chrome-512x512' />
+            
             <link
               rel='icon'
               type='image/png'
               sizes='32x32'
-              href='https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fc9d47a73-9b73-4e98-9885-3c983263bd1e%2F3f2a14a1-44e8-480d-8edc-141451be8bc3%2F1zcdjy.jpg?table=block&id=7b1c4f22-77f7-4449-9e06-fbe0ac4f6b09&spaceId=c9d47a73-9b73-4e98-9885-3c983263bd1e&width=250&userId=dbca7c03-0f49-430b-87dc-fce67e3ce7ce&cache=v2'
+              href='/icon/favicon-32x32'
             />
 
-            <link rel='manifest' href='/manifest.json' />
+            <link rel='manifest' href='/icon/site.webmanifest' />
+
           </Head>
           
           
