@@ -9,7 +9,7 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Blog',
+  name: 'ASHENINK',
   domain: 'https://www.notion.so/Ao-Shen-s-Blog-7b1c4f2277f744499e06fbe0ac4f6b09',
   author: 'Ao Shen',
 
@@ -26,7 +26,7 @@ export default siteConfig({
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: null,
+  defaultPageIcon: 'icon/favicon.ico', // modified 2024-10-11 13:43:55 used tobe null
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
