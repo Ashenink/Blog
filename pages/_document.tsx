@@ -11,13 +11,13 @@ export default class MyDocument extends Document {
         <Html lang='en'>
           <Head>
             
-            <link rel='shortcut icon' href= 'https://img.notionusercontent.com/s3/prod-files-secure%2Fc9d47a73-9b73-4e98-9885-3c983263bd1e%2F39be6149-9c41-4cc1-9297-a5696a5469e0%2Fimage.png/size/w=2000?exp=1728714026&sig=CrRyPAxeL5bXblSGonGY8sWTOzv8CvJYxf7VaCbfLlo' />
+            <link rel='shortcut icon' href= 'https://img.notionusercontent.com/s3/prod-files-secure%2Fc9d47a73-9b73-4e98-9885-3c983263bd1e%2F6cd6950c-566c-4f0a-adaa-4bfad1317a45%2FIMG_1412.jpeg/size/w=380?exp=1728714666&sig=hWzizZyep_b9RjfmRMajTraXs84j8xxnmEXCLHleR0w' />
 
             <link
               rel='icon'
               type='image/png'
               sizes='32x32'
-              href='https://img.notionusercontent.com/s3/prod-files-secure%2Fc9d47a73-9b73-4e98-9885-3c983263bd1e%2F39be6149-9c41-4cc1-9297-a5696a5469e0%2Fimage.png/size/w=2000?exp=1728714026&sig=CrRyPAxeL5bXblSGonGY8sWTOzv8CvJYxf7VaCbfLlo'
+              href='https://img.notionusercontent.com/s3/prod-files-secure%2Fc9d47a73-9b73-4e98-9885-3c983263bd1e%2F6cd6950c-566c-4f0a-adaa-4bfad1317a45%2FIMG_1412.jpeg/size/w=380?exp=1728714666&sig=hWzizZyep_b9RjfmRMajTraXs84j8xxnmEXCLHleR0w'
             />
 
             <link rel='manifest' href='/manifest.json' />
