@@ -10,7 +10,12 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
-            
+
+            <link rel="icon" href="/icon/favicon.ico" type="image/x-icon">
+            <link rel="icon" href="/icon/favicon-32x32.png" sizes="32x32" type="image/png">
+            <link rel="icon" href="/icon/android-chrome-192x192.png" sizes="192x192" type="image/png">
+
+
             <link rel='shortcut icon' href= 'https://img.notionusercontent.com/s3/prod-files-secure%2Fc9d47a73-9b73-4e98-9885-3c983263bd1e%2F6cd6950c-566c-4f0a-adaa-4bfad1317a45%2FIMG_1412.jpeg/size/w=380?exp=1728714666&sig=hWzizZyep_b9RjfmRMajTraXs84j8xxnmEXCLHleR0w' />
 
             <link
