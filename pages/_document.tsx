@@ -11,13 +11,13 @@ export default class MyDocument extends Document {
         <Html lang='en'>
           <Head>
             
-            <link rel='shortcut icon' href= '/icon/android-chrome-512x512' />
-            
+            <link rel='shortcut icon' href= '/icon/android-chrome-512x512.png' />
+
             <link
               rel='icon'
               type='image/png'
               sizes='32x32'
-              href='/icon/favicon-32x32'
+              href='/icon/favicon-32x32.png'
             />
 
             <link rel='manifest' href='/icon/site.webmanifest' />
